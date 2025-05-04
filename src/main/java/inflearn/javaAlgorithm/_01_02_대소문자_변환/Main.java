@@ -1,4 +1,4 @@
-package inflearn.javaAlgorithm.section02._02_대소문자_변환;
+package inflearn.javaAlgorithm._01_02_대소문자_변환;
 
 import java.util.Scanner;
 

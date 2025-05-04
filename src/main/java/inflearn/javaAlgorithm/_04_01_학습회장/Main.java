@@ -1,4 +1,4 @@
-package inflearn.javaAlgorithm.section05._01_학습회장;
+package inflearn.javaAlgorithm._04_01_학습회장;
 
 import java.util.*;
 

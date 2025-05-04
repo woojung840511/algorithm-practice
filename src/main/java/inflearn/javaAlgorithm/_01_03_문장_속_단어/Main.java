@@ -1,4 +1,4 @@
-package inflearn.javaAlgorithm.section02._03_문장_속_단어;
+package inflearn.javaAlgorithm._01_03_문장_속_단어;
 
 import java.util.Scanner;
 
