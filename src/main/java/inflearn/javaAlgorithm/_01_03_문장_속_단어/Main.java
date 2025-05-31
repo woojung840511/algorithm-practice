@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Main {
 
     // 강사님 풀이
-    /*public String solution(String str) {
+    public String solution(String str) {
         String answer = "";
         int max = Integer.MIN_VALUE, pos;
 
@@ -26,27 +26,6 @@ public class Main {
             str = str.substring(pos + 1);
         }
         if (str.length() > answer.length()) answer = str;
-
-        return answer;
-    }*/
-
-    // 내 풀이
-    public String solution(String str) {
-        String split = " ";
-        String answer = "";
-        int benginIndex = 0;
-        int length = str.length();
-
-        while(benginIndex < length) {
-            int spanceIndex = str.indexOf(split, benginIndex);
-            String word = spanceIndex == -1 ? str.substring(benginIndex) : str.substring(benginIndex, spanceIndex);
-
-            if (answer.length() < word.length()) answer = word;
-
-//            boolean isLastWord = spanceIndex == -1;
-//            benginIndex += (word.length() + (isLastWord ? 0 : 1));
-            benginIndex += (word.length() + split.length());
-        }
 
         return answer;
     }
