@@ -1,8 +1,8 @@
-package inflearn.javaAlgorithm.section3_array._3_2_보이는_학생;
+package inflearn.javaAlgorithm.section3_array._3_3_가위바위보;
 
 import java.util.Scanner;
 
-public class byWJ {
+public class _250831 {
     public static void main(String[] args){
         Scanner in=new Scanner(System.in);
         int input1 = in.nextInt();

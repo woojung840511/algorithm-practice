@@ -13,7 +13,7 @@ public class byWJ {
 
         for (int i = 0; i < ints.length; i++) {
             if (i == 0) {
-                System.out.print(ints[i] + " ");
+                System.out.print(ints[i] + " "); // 첫번째는 무조건 출력
             } else {
                 if (ints[i] > ints[i - 1]) {
                     System.out.print(ints[i] + " ");
