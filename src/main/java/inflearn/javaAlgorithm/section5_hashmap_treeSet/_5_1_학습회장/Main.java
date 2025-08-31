@@ -1,4 +1,4 @@
-package inflearn.javaAlgorithm._04_01_학습회장;
+package inflearn.javaAlgorithm.section5_hashmap_treeSet._5_1_학습회장;
 
 import java.util.*;
 

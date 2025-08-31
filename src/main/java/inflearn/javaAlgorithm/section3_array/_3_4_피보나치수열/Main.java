@@ -1,4 +1,4 @@
-package inflearn.javaAlgorithm._03_04_피보나치수열;
+package inflearn.javaAlgorithm.section3_array._3_4_피보나치수열;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package inflearn.javaAlgorithm._03_05_소수;
+package inflearn.javaAlgorithm.section3_array._3_5_소수_에라스토스체;
 
 import java.util.Scanner;
 

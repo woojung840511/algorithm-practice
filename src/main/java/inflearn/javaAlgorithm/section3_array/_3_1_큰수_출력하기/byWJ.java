@@ -1,4 +1,4 @@
-package inflearn.javaAlgorithm._02_01_큰수_출력하기;
+package inflearn.javaAlgorithm.section3_array._3_1_큰수_출력하기;
 
 import java.util.Scanner;
 

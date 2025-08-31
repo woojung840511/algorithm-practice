@@ -1,6 +1,5 @@
-package inflearn.javaAlgorithm._01_03_문장_속_단어;
+package inflearn.javaAlgorithm.section2_string._2_3_문장_속_단어;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class _20250531 {

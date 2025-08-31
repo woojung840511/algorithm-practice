@@ -1,4 +1,4 @@
-package inflearn.javaAlgorithm._02_02_보이는_학생;
+package inflearn.javaAlgorithm.section3_array._3_2_보이는_학생;
 
 import java.util.Scanner;
 

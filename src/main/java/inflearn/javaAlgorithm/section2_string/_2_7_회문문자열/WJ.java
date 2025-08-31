@@ -1,4 +1,4 @@
-package inflearn.javaAlgorithm._01_07_회문문자열;
+package inflearn.javaAlgorithm.section2_string._2_7_회문문자열;
 
 import java.util.Scanner;
 
@@ -20,5 +20,6 @@ public class WJ {
 
         System.out.println(answer);
         return ;
+
     }
 }
