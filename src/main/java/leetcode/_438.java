@@ -2,32 +2,33 @@ package leetcode;
 
 import java.sql.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class _438 {
     public List<Integer> findAnagrams(String s, String p) {
 
+        if (s.length() < p.length()) return List.of();
+
         List<Integer> startIdxList = new ArrayList<>();
 
-        int[] alphaCountOfP = new int[26];
-        for (char c : p.toCharArray()) {
-            alphaCountOfP[c - 'a']++;
+        int[] checkP = new int[26];
+        int[] checkWindow = new int[26];
+
+        for (int i = 0; i < p.length(); i++) {
+            checkP[p.charAt(i) - 'a']++;
+            checkWindow[s.charAt(i) - 'a']++;
         }
 
-        int[] countForDiff = new int[26];
-        for (int i = 0; i < p.length(); i++){
-            countForDiff[s.charAt(i) - 'a']++;
-        }
-
-        for (int i = p.length(); i < s.length(); i++) {
-
-            if (isAnagram(alphaCountOfP, countForDiff)) {
-                startIdxList.add(i - p.length());
+        for (int i = 0; i <= s.length() - p.length(); i++) {
+            if (isAnagram(checkP, checkWindow)) {
+                startIdxList.add(i);
             }
 
-            countForDiff[s.charAt(i) - 'a']--;
-            if (i + 1 < s.length()) {
-                countForDiff[s.charAt(i + p.length()) - 'a']++;
+            checkWindow[s.charAt(i) - 'a']--;
+            int nextRightIdx = i + p.length();
+            if (nextRightIdx < s.length() ) {
+                checkWindow[s.charAt(nextRightIdx) - 'a']++;
             }
         }
 
@@ -42,5 +43,15 @@ public class _438 {
             }
         }
         return true;
+    }
+
+    public static void main(String[] args) {
+        try {
+            List<Integer> anagrams = new _438().findAnagrams("cbaebabacd", "abc");
+            anagrams.stream().forEach(a -> System.out.println(a));
+        } catch (Exception e) {
+            e.getStackTrace();
+            System.out.println(Arrays.toString(e.getStackTrace()));
+        }
     }
 }
